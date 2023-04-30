@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #111;
+}
+
+body > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 20%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+#songs > button {
+  padding: 12px;
+  background: #81c;
+  color: #edf;
+  border: none;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+
+  transition: background 0.4s, transform 0.4s;
+}
+
+#songs > button:hover {
+  transform: scale(1.05);
+  background: #507;
+}
+
+#start,
+#ouvir {
+  padding: 12px;
+  background: #dd2200;
+  color: #fdd;
+  border: none;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+
+  transition: background 0.4s, transform 0.4s;
+}
+
+#start:hover,
+#ouvir:hover {
+  transform: scale(1.05);
+  background: #dd0010;
+}
+
+#start::before {
+  content: "\25B6";
+}
+
+#start.record::before {
+  content: "\25A0";
+}
+
+#ouvir::before {
+  content: "\1F3A7";
+}
+
+@media (max-width: 1100px) {
+  body > div {
+    gap: 32px;
+    width: 30%;
+  }
+}
+@media (max-width: 849px) {
+  body > div {
+    gap: 32px;
+    width: 35%;
+  }
+}
+@media (max-width: 705px) {
+  body > div {
+    gap: 32px;
+    width: 40%;
+  }
+}
+
+@media (max-width: 625px) {
+  body > div {
+    gap: 32px;
+    width: 50%;
+  }
+}
+@media (max-width: 495px) {
+  body > div {
+    gap: 32px;
+    width: 60%;
+  }
+}
+@media (max-width: 415px) {
+  body > div {
+    gap: 32px;
+    width: 70%;
+  }
+}
+@media (max-width: 359px) {
+  body > div {
+    gap: 32px;
+    width: 90%;
+  }
+}
